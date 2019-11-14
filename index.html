@@ -4,7 +4,7 @@
 <head>
 
   <meta name="viewport" content="width=500">
-  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link rel="icon" type="image/vnd.microsoft.icon" href="images/waves.ico">
   <title>Onur Beker</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
@@ -21,7 +21,8 @@
               <p align="center">
                 <name>Onur Beker</name>
               </p>
-              <p>I am a junior at Bogazici University, majoring in EE. I was also a research student at <a href="https://pi.is.mpg.de/">Max Planck Institute for Intelligent Systems, Physical Intelligence Department</a> . I am currently a research student at <a href="https://www.nmr.mgh.harvard.edu/lab/mr-pig">MGH/HST Martinos Center for Biomedical Imaging  - MR Physics and Instrumentation Group</a>.
+              <p>I am a senior at Bogazici University, majoring in EE. I was also a research intern at <a href="https://pi.is.mpg.de/">Max Planck Institute for Intelligent Systems, Physical Intelligence Department</a>, 
+			     and <a href="https://www.nmr.mgh.harvard.edu/lab/mr-pig">MGH/HST Martinos Center for Biomedical Imaging  - MR Physics and Instrumentation Group</a>.
               </p>
            
               <p align=center>
@@ -38,7 +39,7 @@
             <td width="100%" valign="middle">
               <heading>Research Interests</heading>
               <p>
-                 As an undergraduate, I am still figuring out what my research interests are, by working on different topics through research internships. I am currently working on two research projects: MR image reconstruction using scan-specific CNN's (at Martinos), and multi-object tracking (my bachelor's thesis).
+                 I am interested in computer vision, medical image analysis, machine learning, and signal processing in general.
               </p>
             </td>
           </tr>
@@ -52,6 +53,44 @@
           </tr>
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr onmouseout="spark_stop()" onmouseover="spark_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='spark_image'><img src='images/after_spark.png'></div>
+                <img src='images/before_spark.png'>
+              </div>
+              <script type="text/javascript">
+                function spark_start() {
+                  document.getElementById('spark_image').style.opacity = "1";
+                }
+
+                function spark_stop() {
+                  document.getElementById('spark_image').style.opacity = "0";
+                }
+                spark_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://www.nature.com/articles/s41563-019-0407-3">
+                <papertitle>Scan-specific, Parameter-free Artifact Reduction in K-space (SPARK)</papertitle>
+              </a>
+              <br>
+			  <strong>Onur Beker</strong>,
+              <a href="http://www.nmr.mgh.harvard.edu/user/4042366">Congyu Liao</a>,
+			  <a href="http://www.nmr.mgh.harvard.edu/user/4554692">Jaejin Cho</a>,
+              <a href="https://www.nmr.mgh.harvard.edu/user/4542119">Zijing Zhang</a>,
+              <a href="http://www.nmr.mgh.harvard.edu/user/6627">Kawin Setsompop</a>
+			  <a href="http://www.nmr.mgh.harvard.edu/user/3117921">Berkin Bilgic</a>
+              <br>
+              <em>(submitted to) ISMRM </em>, (2020)
+              <p>We propose a convolutional neural network (CNN) approach that works synergistically with physics-based reconstruction methods to reduce artifacts in accelerated MRI.</p>
+            </td>
+          </tr>
+
+        </table>
+		
+		<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
           <tr onmouseout="dep_stop()" onmouseover="dep_start()">
             <td width="25%">
@@ -91,6 +130,7 @@
           </tr>
 
         </table>
+		
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 		  
           <tr>
